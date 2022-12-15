@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="BransBakery_JustinLazarev.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Bran's Bakery</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header><h1>Bran's Bakery</h1></header>
+            <nav>
+                <ul>
+                    <li><a class="sideitem" href="customer.aspx">Order List</a></li>
+                    <li><a href="default.aspx">Home</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
+                    <li><a href="review.aspx">Reviews</a></li>
+                    <li><a href="faq.aspx">FAQ</a></li>
+                    <li><a href="order.aspx">Order Here</a></li>
+                </ul>
+            </nav>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer>
+                Copyright &copy; 2021 Bran's Bakery<br><a href="mailto:justin.lazarev1@gmail.com">bransbakery@gmail.com</a>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
+
